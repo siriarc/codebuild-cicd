@@ -1,0 +1,17 @@
+  version:0.2
+  phases:
+    build:
+      commands:
+      - echo build started in `date`
+      - echo compiling the python code
+      - echo this is my code
+      - pip install pandas
+      - echo pandas library is installed
+    post build:
+      commands:
+      - echo build completed on `date`
+      - pwd
+      - ls -al
+  artifacts:
+    files:
+      '**/*'
